@@ -10,6 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fastify": "^4.19.0"
+    "@grpc/grpc-js": "^1.8.17",
+    "@grpc/proto-loader": "^0.7.7",
+    "fastify": "^4.19.0",
+    "graphql": "^16.7.1",
+    "mercurius": "^13.0.0"
   }
 }
