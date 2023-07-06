@@ -13,7 +13,8 @@ const PORT = process.env.PORT || 4000;
 console.log(`worker pid=${process.pod}`);
 
 server.get("/recipes/:id", async (req, reply) => {
-  console.log(`worker request pid=${process.pid}`);
+  // commented out for load testing
+  // console.log(`worker request pid=${process.pid}`);
   const id = Number(req.params.id);
   if (id !== 42) {
     reply.statusCode = 404;
@@ -35,5 +36,5 @@ server.get("/recipes/:id", async (req, reply) => {
 });
 
 server.listen({ port: PORT, host: HOST }, () => {
-  console.log(`Producer running at http://${HOST}:${PORT}`);
+  console.log(`Producer running at https://${HOST}:${PORT}`);
 });
