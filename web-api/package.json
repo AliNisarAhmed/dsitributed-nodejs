@@ -15,7 +15,8 @@
     "@grpc/proto-loader": "^0.7.7",
     "fastify": "^4.19.0",
     "node-fetch": "^3.3.1",
-    "statsd-client": "^0.4.7"
+    "statsd-client": "^0.4.7",
+    "zipkin-lite": "^0.1.1"
   },
   "type": "module"
 }
