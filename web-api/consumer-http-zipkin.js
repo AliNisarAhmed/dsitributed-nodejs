@@ -8,7 +8,7 @@ import Zipkin from "zipkin-lite";
 
 const HOST = process.env.HOST || "127.0.0.1";
 const PORT = process.env.PORT || 3000;
-const TARGET = process.env.target || "localhost:4000";
+const TARGET = process.env.TARGET || "localhost:4000";
 const ZIPKIN = process.env.ZIPKIN || "localhost:9411";
 const zipkin = new Zipkin({
   zipkinHost: ZIPKIN,
