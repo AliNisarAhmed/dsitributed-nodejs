@@ -1,5 +1,5 @@
-import Fastify from 'fastify';
-import fetch from 'node-fetch';
+import Fastify from "fastify";
+import fetch from "node-fetch";
 
 const server = Fastify({
   logger: true,
@@ -16,6 +16,12 @@ server.get("/", async () => {
     consumer_pid: process.pid,
     producer_data,
   };
+});
+
+server.get("/hello", async () => "Hello");
+
+server.get("/kill", async () => {
+  process.exit(42);
 });
 
 server.listen({ port: PORT, host: HOST }, () => {

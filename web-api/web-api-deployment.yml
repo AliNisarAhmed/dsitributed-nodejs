@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: web-api
-          image: web-api:v4
+          image: web-api:v8
           ports:
           - containerPort: 1337
           env:
